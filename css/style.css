@@ -1,3 +1,18 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
 body{
   font-family: "Roboto", sans-serif;
 }
@@ -30,12 +45,12 @@ body{
 }
 
 #calc-zero{
-  width: 52px;
+  width: 52.66666667px;
   border-radius: 0 0 0 4px;
 }
 
 #calc-clear{
-  width: 52px;
+  width: 52.66666667px;
 }
 
 #calc-display-val{
@@ -48,7 +63,8 @@ body{
   font-size: 48px;
   background: #383838;
   overflow: hidden;
-  white-space: nowrap;
+  white-space: normal;
+  direction: rtl;
   padding: 12px;
   border-radius: 4px 4px 0 0;
 
